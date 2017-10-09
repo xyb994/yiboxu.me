@@ -1,0 +1,69 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: center;
+  transition: 250ms linear width;
+}
+
+.logo.light {
+  width: 100%;
+}
+
+.logo.light .x-part-upper,
+.logo.light .u {
+  fill: #eeeeee;
+}
+
+.logo.light .x-part-lower {
+  fill: #2196f3;
+}
+
+section#social {
+  margin-top: 40px;
+}
+
+section#social .social-item {
+  width: 32px;
+  margin: 0px 15px;
+}
+
+section#social .social-item a {
+  display: block;
+  width: 100%;
+  opacity: .4;
+  transition: 250ms linear opacity;
+}
+
+section#social .social-item a:hover {
+  opacity: 1;
+  transition: 250ms linear opacity;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 150px;
+    transition: 250ms linear width;
+  }
+
+  section#social .social-item a {
+    opacity: .8;
+  }
+}
